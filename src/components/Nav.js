@@ -1,12 +1,11 @@
-import React from 'react';
-
 function Nav() {
   return (
     <nav>
-      <h2>MyApp</h2>
+      <h2>Little Lemon</h2>
       <ul>
         <li>Home</li>
-        <li>About</li>
+        <li>Menu</li>
+        <li>Reservations</li>
         <li>Contact</li>
       </ul>
     </nav>
