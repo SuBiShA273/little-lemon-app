@@ -1,7 +1,84 @@
+
+
+/* APP LAYOUT */
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: aqua;
 }
 
+
+
+/* NAV */
+.nav-box {
+  background-color: #495e57;
+  color: white;
+  padding: 20px 80px;
+}
+.nav-box ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-box li {
+  cursor: pointer;
+  font-weight: 500;
+}
+.nav-box a{
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO / CTA */
+.hero-box {
+  background-color: #495e57;
+  color: white;
+  padding: 60px 80px;
+}
+
+.hero-box h1 {
+  font-size: 48px;
+}
+
+.hero-box button {
+  margin-top: 20px;
+  background-color: #f4ce14;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* SPECIALS */
+.specials-box {
+  background-color: #edefee;
+  padding: 60px 80px;
+}
+
+.specials-box h2 {
+  margin-bottom: 20px;
+}
+
+/* TESTIMONIALS */
+.testimonials-box {
+  padding: 60px 80px;
+  background-color: #fdfdfd;
+}
+
+/* CHICAGO */
+.chicago-box {
+  padding: 60px 80px;
+  background-color: #edefee;
+}
+
+/* FOOTER */
+.footer-box {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+}

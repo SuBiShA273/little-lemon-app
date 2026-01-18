@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer>
-      <p>© 2026 MyApp</p>
-    </footer>
+    <div className="footer-box section">
+      <p>© 2026 Little Lemon. All rights reserved.</p>
+    </div>
   );
 }
 

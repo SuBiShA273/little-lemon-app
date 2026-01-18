@@ -1,13 +1,12 @@
 function Specials() {
   return (
-    <section>
-      <h2>Specials</h2>
-      <ul>
-        <li>Spaghetti Carbonara</li>
-        <li>Margherita Pizza</li>
-        <li>Caesar Salad</li>
-      </ul>
-    </section>
+    <div className="specials-box section">
+      <h2>This Week's Specials</h2>
+
+      <p><strong>Greek Salad</strong> – Fresh lettuce, olives, feta cheese.</p>
+      <p><strong>Bruschetta</strong> – Grilled bread with garlic and tomatoes.</p>
+      <p><strong>Lemon Dessert</strong> – Authentic family recipe.</p>
+    </div>
   );
 }
 

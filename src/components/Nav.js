@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
+
 function Nav() {
   return (
-    <nav>
+    <nav className="nav-box">
       <h2>Little Lemon</h2>
       <ul>
-        <li>Home</li>
+        <li><Link to="/">Home</Link></li>
         <li>Menu</li>
-        <li>Reservations</li>
+        <li><Link to="/booking">Reserve</Link></li>
+        <li><Link to="/bookings">Bookings</Link></li>
         <li>Contact</li>
       </ul>
     </nav>
