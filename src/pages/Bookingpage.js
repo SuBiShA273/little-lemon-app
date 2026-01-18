@@ -1,41 +1,44 @@
 import { useState } from "react";
-import Nav from "../components/Nav.js";
-import Footer from "../components/Footer.js";
-import BookingForm from "../components/BookingForm.js";
-import Main from "../components/Main.js";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import BookingForm from "../components/BookingForm";
+
+const DEFAULT_TIMES = [
+  "5:00",
+  "6:00",
+  "7:00",
+  "8:00",
+  "9:00",
+  "10:00",
+];
 
 function Bookingpage({ addBooking }) {
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00",
-    "17:30",
-    "18:00",
-    "18:30",
-    "19:00",
-    "19:30",
-  ]);
+  const [availableTimes, setAvailableTimes] = useState(DEFAULT_TIMES);
 
-  const updateTimes = (date) => {
-    // You can add logic here to fetch available times based on date
-    // For now, it returns the same times
-    setAvailableTimes([
-      "17:00",
-      "17:30",
-      "18:00",
-      "18:30",
-      "19:00",
-      "19:30",
-    ]);
+  // Reset times when date changes (simple version)
+  const updateTimes = () => {
+    setAvailableTimes(DEFAULT_TIMES);
+  };
+
+  const handleAddBooking = (bookingData) => {
+    addBooking(bookingData);
+
+    // ❌ prevent double booking
+    setAvailableTimes((prev) =>
+      prev.filter((time) => time !== bookingData.time)
+    );
   };
 
   return (
     <div>
       <Nav />
-      <Main />
+
       <BookingForm
         availableTimes={availableTimes}
         updateTimes={updateTimes}
-        addBooking={addBooking}
+        addBooking={handleAddBooking}
       />
+
       <Footer />
     </div>
   );
