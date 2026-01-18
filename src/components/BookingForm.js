@@ -53,8 +53,8 @@ function BookingForm({ availableTimes, updateTimes, addBooking }) {
 
   return (
     <div className="booking-form-box">
-      <h1>Reserve a Table</h1>
-
+      <p style={{fontSize:"35px",color:"white",textAlign:"center"}}>Reserve a Table</p>
+      <div className="formbox">
       <form onSubmit={handleSubmit}>
         <label>Date:</label>
         <input
@@ -102,11 +102,11 @@ function BookingForm({ availableTimes, updateTimes, addBooking }) {
           <option value="Engagement">Engagement</option>
         </select>
 
-        {/* 🔥 Disabled until form is valid */}
         <button type="submit" disabled={!isFormValid}>
           Book Now
         </button>
       </form>
+      </div>
     </div>
   );
 }

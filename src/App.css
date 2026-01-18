@@ -11,68 +11,237 @@
 
 /* NAV */
 .nav-box {
-  background-color: #495e57;
-  color: white;
+  background-color: white;
+  color: #296374;
   padding: 20px 80px;
+  height: 80px;
+  display: flex;
+}
+.nav-box .LL {
+  font-size: 24px;
+  font-weight: 650;
+  white-space: nowrap;
 }
 .nav-box ul {
   list-style: none;
   display: flex;
-  gap: 30px;
 }
-
+.nav-box .nav-items {
+  display: flex;
+  padding-left: 625px;
+}
 .nav-box li {
   cursor: pointer;
   font-weight: 500;
+  padding-left: 50px;
 }
 .nav-box a{
-  color: white;
+  color: #296374;
   text-decoration: none;
 }
 
-/* HERO / CTA */
-.hero-box {
-  background-color: #495e57;
+/* Call to action */
+.call {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 100px;
+  height: 600px;
+  background-color: #296374;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+.call .text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.call #head {
   color: white;
-  padding: 60px 80px;
-}
-
-.hero-box h1 {
   font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-
-.hero-box button {
+.call #content{
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.5;
+}
+.call button {
+  font-size: 20px;
   margin-top: 20px;
-  background-color: #f4ce14;
+  background-color: #EDEDCE;
   color: black;
   border: none;
   padding: 12px 24px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 6px;
+  width: 200px;
 }
+#imagbox {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 0px;
+  margin-right: 50px;
+}
+.call #image{
+  width: 600px;
+  height: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
 
 /* SPECIALS */
 .specials-box {
   background-color: #edefee;
+  height: 600px;
   padding: 60px 80px;
 }
+.specials-box .box{
+  display: flex;
+  justify-content: space-evenly;
+}
 
-.specials-box h2 {
+.specials-box .box #box1,
+.specials-box .box #box2,
+.specials-box .box #box3 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid gray;
+  border-radius: 14px;
+  background-color: white;
+  overflow: hidden;
+}
+.specials-box .box #box1img,
+.specials-box .box #box2img,
+.specials-box .box #box3img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.specials-box .box #img1,
+.specials-box .box #img2,
+.specials-box .box #img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.specials-box .box #box1 strong,
+.specials-box .box #box2 strong,
+.specials-box .box #box3 strong {
+  display: block;
+  margin: 12px 16px 6px;
+  font-size: 18px;
+}
+
+.specials-box .box #box1 p,
+.specials-box .box #box2 p,
+.specials-box .box #box3 p {
+  margin: 0 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.specials-box #head {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-/* TESTIMONIALS */
-.testimonials-box {
+/*CustomersSay*/
+.customerbox {
   padding: 60px 80px;
-  background-color: #fdfdfd;
+  background-color: #0C2C55;
+  height: 500px;
+}
+.customerbox .box{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.customerbox #box1,#box2, #box3 {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 14px;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+/*Form*/
+/* Outer white box */
+.booking-form-box {
+  background-color: #629FAD;
+}
+.formbox {
+  background-color: white;
+  width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
 }
 
-/* CHICAGO */
-.chicago-box {
-  padding: 60px 80px;
-  background-color: #edefee;
+/* Form layout */
+.formbox form {
+  display: flex;
+  flex-direction: column;
 }
+
+/* Labels */
+.formbox label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  color: #333;
+}
+
+/* Inputs & selects */
+.formbox input,
+.formbox select {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Focus effect */
+.formbox input:focus,
+.formbox select:focus {
+  border-color: #296374;
+}
+
+/* Submit button */
+.formbox button {
+  margin-top: 24px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #629FAD;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Disabled button */
+.formbox button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
 
 /* FOOTER */
 .footer-box {
