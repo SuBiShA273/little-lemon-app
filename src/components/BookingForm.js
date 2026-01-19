@@ -53,7 +53,7 @@ function BookingForm({ availableTimes, updateTimes, addBooking }) {
 
   return (
     <div className="booking-form-box">
-      <p style={{fontSize:"35px",color:"white",textAlign:"center"}}>Reserve a Table</p>
+      <p style={{fontSize:"35px",color:"black",textAlign:"center",paddingTop:"10px"}}>Reserve a Table</p>
       <div className="formbox">
       <form onSubmit={handleSubmit}>
         <label>Date:</label>

@@ -182,11 +182,12 @@
 /*Form*/
 /* Outer white box */
 .booking-form-box {
-  background-color: #629FAD;
+  background-color: #c5dadf;
+  height: 700px;
 }
 .formbox {
   background-color: white;
-  width: 420px;
+  width: 600px;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -219,7 +220,7 @@
 
 /* Focus effect */
 .formbox input:focus,
-.formbox select:focus {
+.formbox select:focus{
   border-color: #296374;
 }
 
@@ -240,6 +241,57 @@
 .formbox button:disabled {
   background-color: #aaa;
   cursor: not-allowed;
+}
+
+.b{
+  background-color: #edefee;
+  height: 700px;
+  padding:20px 80px;
+}
+.bb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Booking card */
+.booking-confirmation {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.booking-confirmation:hover {
+  transform: translateY(-3px);
+}
+
+/* Row layout */
+.booking-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-row:last-child {
+  border-bottom: none;
+}
+
+/* Label and value */
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.value {
+  font-weight: 500;
+  color: #222;
 }
 
 
